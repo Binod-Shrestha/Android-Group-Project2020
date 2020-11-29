@@ -49,4 +49,5 @@ binding = FragmentHomeBinding.inflate(layoutInflater)
         setHasOptionsMenu(true)
         return binding.root
     }
+    
 }
