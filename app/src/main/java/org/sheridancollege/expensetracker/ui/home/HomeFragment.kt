@@ -35,11 +35,11 @@ binding = FragmentHomeBinding.inflate(layoutInflater)
 
 
         binding.btnExpense.setOnClickListener{ view: View ->
-            view.findNavController().navigate(R.id.action_nav_home_to_nav_expense)
+            view.findNavController().navigate(R.id.action_nav_home_to_expenditureFragment)
 
         }
         binding.btnViewIncome.setOnClickListener{ view: View ->
-            view.findNavController().navigate(R.id.action_nav_home_to_nav_income)
+            view.findNavController().navigate(R.id.action_nav_home_to_earningsFragment)
 
         }
         binding.btnViewSummary.setOnClickListener{ view: View ->
