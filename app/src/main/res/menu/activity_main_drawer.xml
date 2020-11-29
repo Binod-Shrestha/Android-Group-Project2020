@@ -9,15 +9,16 @@
             android:icon="@drawable/ic_home"
             android:title="@string/menu_home" />
         <item
-            android:id="@+id/nav_expense"
+            android:id="@+id/expenditureFragment"
             android:icon="@drawable/ic_shopping"
-            android:title="@string/menu_expense" />
+            android:title="@string/menu_expense"
+            />
         <item
-            android:id="@+id/nav_income"
+            android:id="@+id/earningsFragment"
             android:icon="@drawable/ic_dollar"
             android:title="@string/menu_income" />
         <item
-            android:id="@+id/nav_summary"
+            android:id="@+id/summaryFragment"
             android:icon="@drawable/ic_summary"
             android:title="@string/menu_summary" />
     </group>
