@@ -41,5 +41,14 @@
         android:id="@+id/expenditureFragment"
         android:name="org.sheridancollege.expensetracker.ui.expense.ExpenditureFragment"
         android:label="fragment_expenditure"
-        tools:layout="@layout/fragment_expenditure" />
+        tools:layout="@layout/fragment_expenditure" >
+        <action
+            android:id="@+id/action_expenditureFragment_to_addExpense"
+            app:destination="@id/addExpense" />
+    </fragment>
+    <fragment
+        android:id="@+id/addExpense"
+        android:name="org.sheridancollege.expensetracker.AddExpense"
+        android:label="fragment_add_expense"
+        tools:layout="@layout/fragment_add_expense" />
 </navigation>
