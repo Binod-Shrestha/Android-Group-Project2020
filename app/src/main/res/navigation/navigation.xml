@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="org.sheridancollege.expensetracker.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_summaryFragment"
+            app:destination="@id/summaryFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_earningsFragment"
+            app:destination="@id/earningsFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_expenditureFragment"
+            app:destination="@id/expenditureFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/summaryFragment"
+        android:name="org.sheridancollege.expensetracker.ui.summary.SummaryFragment"
+        android:label="fragment_summary"
+        tools:layout="@layout/fragment_summary" />
+    <fragment
+        android:id="@+id/earningsFragment"
+        android:name="org.sheridancollege.expensetracker.ui.income.EarningsFragment"
+        android:label="fragment_earnings"
+        tools:layout="@layout/fragment_earnings" />
+    <fragment
+        android:id="@+id/expenditureFragment"
+        android:name="org.sheridancollege.expensetracker.ui.expense.ExpenditureFragment"
+        android:label="fragment_expenditure"
+        tools:layout="@layout/fragment_expenditure" />
+</navigation>

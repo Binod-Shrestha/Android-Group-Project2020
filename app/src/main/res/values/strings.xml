@@ -11,5 +11,8 @@
     <string name="menu_expense">Expense</string>
     <string name="menu_income">Income</string>
     <string name="menu_summary">Summary</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="nav_expenditure">Expenditure Page</string>
+    <string name="nav_earnings">Earnings Page</string>
 
 </resources>
