@@ -14,5 +14,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="nav_expenditure">Expenditure Page</string>
     <string name="nav_earnings">Earnings Page</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
