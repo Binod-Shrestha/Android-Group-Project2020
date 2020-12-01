@@ -1,9 +1,7 @@
 package org.sheridancollege.expensetracker.ui.home
 
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import android.widget.TextView
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.DataBindingUtil.setContentView
@@ -11,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
+import androidx.navigation.ui.NavigationUI
 import org.sheridancollege.expensetracker.R
 import org.sheridancollege.expensetracker.databinding.ActivityMainBinding
 import org.sheridancollege.expensetracker.databinding.FragmentHomeBinding
@@ -25,6 +24,7 @@ class HomeFragment : Fragment() {
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
+
 
 binding = FragmentHomeBinding.inflate(layoutInflater)
 
@@ -48,6 +48,17 @@ binding = FragmentHomeBinding.inflate(layoutInflater)
         }
         setHasOptionsMenu(true)
         return binding.root
+
+
+    }
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        super.onCreateOptionsMenu(menu, inflater)
+        inflater.inflate(R.menu.main, menu)
+    }
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return NavigationUI.
+        onNavDestinationSelected(item,requireView().findNavController())
+                || super.onOptionsItemSelected(item)
     }
     
 }
