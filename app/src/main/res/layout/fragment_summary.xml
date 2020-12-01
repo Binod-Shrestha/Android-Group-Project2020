@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/summaryFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.summary.SummaryFragment"
-    >
+    tools:context=".ui.summary.SummaryFragment">
 
     <Button
         android:id="@+id/btnCancel"
@@ -30,6 +29,7 @@
         android:layout_width="364dp"
         android:layout_height="53dp"
         android:background="#FFEB3B"
+        android:gravity="center|center_vertical"
         android:text="Analysis"
         android:textColor="#000000"
         android:textSize="25dp"
@@ -38,9 +38,7 @@
         app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.938"
-        android:gravity="center|center_vertical"
-        />
+        app:layout_constraintVertical_bias="0.938" />
 
     <DatePicker
         android:id="@+id/datePicker"
@@ -115,9 +113,9 @@
                 android:id="@+id/label_expense"
                 android:layout_marginLeft="30dp"
                 android:text="Expenses"
-                android:textStyle="bold"
                 android:textColor="#FF0000"
-                android:textSize="30dp" />
+                android:textSize="30dp"
+                android:textStyle="bold" />
 
             />
 
@@ -125,9 +123,9 @@
                 android:id="@+id/label_expenditure"
                 android:layout_marginLeft="40dp"
                 android:text="Inocome"
-                android:textStyle="bold"
                 android:textColor="#0E8C13"
-                android:textSize="30dp" />
+                android:textSize="30dp"
+                android:textStyle="bold" />
         </TableRow>
 
     </TableLayout>
