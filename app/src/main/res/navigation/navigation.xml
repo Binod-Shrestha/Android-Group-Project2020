@@ -13,7 +13,7 @@
         <action
             android:id="@+id/action_nav_home_to_summaryFragment"
             app:destination="@id/summaryFragment"
-            app:popUpTo="@id/summaryFragment"
+            app:popUpTo="@id/nav_home"
             app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_nav_home_to_earningsFragment"
