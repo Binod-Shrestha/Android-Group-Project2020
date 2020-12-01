@@ -25,13 +25,20 @@
             app:destination="@id/expenditureFragment"
             app:popUpTo="@id/expenditureFragment"
             app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_nav_home_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
     </fragment>
 
     <fragment
         android:id="@+id/summaryFragment"
         android:name="org.sheridancollege.expensetracker.ui.summary.SummaryFragment"
-        android:label="fragment_summary"
-        tools:layout="@layout/fragment_summary" />
+        android:label="@string/fragment_summary"
+        tools:layout="@layout/fragment_summary" >
+        <action
+            android:id="@+id/action_summaryFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
     <fragment
         android:id="@+id/earningsFragment"
         android:name="org.sheridancollege.expensetracker.ui.income.EarningsFragment"
@@ -51,4 +58,9 @@
         android:name="org.sheridancollege.expensetracker.AddExpense"
         android:label="fragment_add_expense"
         tools:layout="@layout/fragment_add_expense" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="org.sheridancollege.expensetracker.AboutFragment"
+        android:label="About"
+        tools:layout="@layout/fragment_about" />
 </navigation>

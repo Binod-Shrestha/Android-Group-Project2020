@@ -31,7 +31,6 @@
         android:layout_height="53dp"
         android:background="#FFEB3B"
         android:text="Analysis"
-        android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="25dp"
         app:layout_constraintBottom_toTopOf="@+id/btnCancel"
@@ -39,41 +38,48 @@
         app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.938" />
+        app:layout_constraintVertical_bias="0.938"
+        android:gravity="center|center_vertical"
+        />
 
     <DatePicker
         android:id="@+id/datePicker"
-        android:layout_width="304dp"
-        android:layout_height="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="92dp"
         android:calendarViewShown="false"
         android:datePickerMode="spinner"
+        android:fadeScrollbars="true"
+        android:theme="@style/NumberPickerStyle"
         app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+
+
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.736"
-        app:layout_constraintStart_toStartOf="@+id/textView_calendar"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.573" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_calendar"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView_calendar"
         android:layout_width="wrap_content"
         android:layout_height="32dp"
-        android:text="Calendar:"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="15dp"
+        android:gravity="center|center_vertical"
+        android:text="Calendar"
+        android:textColor="#000000"
+        android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintHorizontal_bias="0.464"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.173" />
+        app:layout_constraintVertical_bias="0.045" />
 
     <TableLayout
         android:id="@+id/tableLayout"
         android:layout_width="356dp"
-        android:layout_height="194dp"
+        android:layout_height="100dp"
         app:layout_constraintBottom_toTopOf="@+id/label_analysis"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
@@ -83,7 +89,7 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
             <TextView
 
@@ -103,20 +109,24 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="65dp">
+            android:layout_height="wrap_content">
 
             <TextView
+                android:id="@+id/label_expense"
                 android:layout_marginLeft="30dp"
                 android:text="Expenses"
-                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textColor="#FF0000"
                 android:textSize="30dp" />
 
             />
 
             <TextView
+                android:id="@+id/label_expenditure"
                 android:layout_marginLeft="40dp"
-                android:text="Inocme"
-                android:textColor="@color/black"
+                android:text="Inocome"
+                android:textStyle="bold"
+                android:textColor="#0E8C13"
                 android:textSize="30dp" />
         </TableRow>
 
