@@ -55,7 +55,7 @@
     </fragment>
     <fragment
         android:id="@+id/addExpense"
-        android:name="org.sheridancollege.expensetracker.AddExpense"
+        android:name="org.sheridancollege.expensetracker.ui.expense.AddExpense"
         android:label="fragment_add_expense"
         tools:layout="@layout/fragment_add_expense" />
     <fragment
