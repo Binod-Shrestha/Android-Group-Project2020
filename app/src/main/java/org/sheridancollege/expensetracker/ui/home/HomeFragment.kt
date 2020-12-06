@@ -8,6 +8,7 @@ import androidx.databinding.DataBindingUtil.setContentView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
 import org.sheridancollege.expensetracker.R
@@ -27,6 +28,8 @@ class HomeFragment : Fragment() {
 
 
 binding = FragmentHomeBinding.inflate(layoutInflater)
+
+
 
         homeViewModel =
             ViewModelProvider(this).get(HomeViewModel::class.java)
@@ -60,5 +63,5 @@ binding = FragmentHomeBinding.inflate(layoutInflater)
         onNavDestinationSelected(item,requireView().findNavController())
                 || super.onOptionsItemSelected(item)
     }
-    
+
 }
