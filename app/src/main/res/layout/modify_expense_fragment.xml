@@ -4,18 +4,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#3CFAAEAE"
-    tools:context=".ui.expense.AddExpense">
+    tools:context=".ui.expense.ModifyExpenseFragment">
 
     <TextView
         android:id="@+id/label_Expense"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Expense"
+        android:text="Modify Expense"
         android:textStyle="bold"
         android:textSize="25dp"
         android:layout_marginTop="30dp"
         android:layout_centerHorizontal="true"
         />
+
     <TextView
         android:id="@id/textView_date"
         android:layout_width="wrap_content"
@@ -88,14 +89,23 @@
         android:layout_below="@id/textView_description"/>
 
     <Button
-        android:id="@+id/btn_add"
+        android:id="@+id/btn_modify"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="Add"
+        android:text="Modify"
         android:layout_marginTop="33dp"
         android:layout_below="@+id/editText_amount"
         android:layout_centerHorizontal="true"
         />
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/btn_modify"
+        android:layout_centerHorizontal="true"
+        android:text="Delete"/>
 
 
 
