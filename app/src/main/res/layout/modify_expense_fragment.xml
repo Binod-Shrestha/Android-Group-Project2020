@@ -89,7 +89,7 @@
         android:layout_below="@id/textView_description"/>
 
     <Button
-        android:id="@+id/btn_modify"
+        android:id="@+id/btn_modify_expense"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="Modify"
@@ -99,7 +99,7 @@
         />
 
     <Button
-        android:id="@+id/btn_delete"
+        android:id="@+id/btn_delete_expense"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="33dp"
