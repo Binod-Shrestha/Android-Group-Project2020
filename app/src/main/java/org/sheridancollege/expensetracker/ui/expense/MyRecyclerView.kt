@@ -3,6 +3,7 @@ package org.sheridancollege.expensetracker.ui.expense
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.DatePicker
 import android.widget.EditText
 import android.widget.TextView
@@ -18,6 +19,7 @@ class MyRecyclerView (private val sampleList: List <ListItem>): RecyclerView.Ada
         val date: TextView = itemView.textView_date
         val description: TextView = itemView.textView_description
         val amount: TextView =itemView.textView_amount
+        val modify : Button = itemView.btn_modify
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
@@ -35,5 +37,6 @@ class MyRecyclerView (private val sampleList: List <ListItem>): RecyclerView.Ada
         holder.description.text= currentItem.description
         holder.date.text=currentItem.date
         holder.amount.text = currentItem.amount.toString()
+        holder.modify.text = "Modify"
     }
 }
