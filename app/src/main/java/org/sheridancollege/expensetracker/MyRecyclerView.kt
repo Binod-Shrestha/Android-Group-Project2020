@@ -23,7 +23,7 @@ class MyRecyclerView (private val sampleList: List <ListItem>): RecyclerView.Ada
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
-        val itemView = LayoutInflater.from(parent.context).inflate(R.layout.expense_item,
+        val itemView = LayoutInflater.from(parent.context).inflate(R.layout.earnings_item,
             parent, false)
         return MyViewHolder(itemView)
 

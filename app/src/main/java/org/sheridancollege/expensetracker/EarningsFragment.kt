@@ -23,7 +23,7 @@ class EarningsFragment: Fragment() {
     ): View? {
         binding = FragmentEarningsBinding.inflate(layoutInflater)
         binding.fab.setOnClickListener{ view: View ->
-            view.findNavController().navigate(R.id.action_addExpense_to_expenditureFragment)
+            view.findNavController().navigate(R.id.action_earningsFragment_to_addEarning)
         }
 
         setHasOptionsMenu(true)

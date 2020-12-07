@@ -41,7 +41,7 @@
     </fragment>
     <fragment
         android:id="@+id/earningsFragment"
-        android:name="org.sheridancollege.expensetracker.ui.income.EarningsFragment"
+        android:name="org.sheridancollege.expensetracker.EarningsFragment"
         android:label="fragment_earnings"
         tools:layout="@layout/fragment_earnings" >
         <action
