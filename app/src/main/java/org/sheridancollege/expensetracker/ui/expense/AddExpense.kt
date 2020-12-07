@@ -13,14 +13,13 @@ import org.sheridancollege.expensetracker.databinding.FragmentAddExpenseBinding
 class AddExpense : Fragment() {
 
     private lateinit var binding: FragmentAddExpenseBinding
+
     override fun onCreateView(
             inflater: LayoutInflater,
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
         binding = FragmentAddExpenseBinding.inflate(layoutInflater)
-
-
         setHasOptionsMenu(true)
         return binding.root
     }

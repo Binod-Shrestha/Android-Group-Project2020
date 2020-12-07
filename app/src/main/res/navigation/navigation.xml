@@ -52,6 +52,9 @@
         <action
             android:id="@+id/action_expenditureFragment_to_addExpense"
             app:destination="@id/addExpense" />
+        <action
+            android:id="@+id/action_expenditureFragment_to_modifyExpenseFragment"
+            app:destination="@id/modifyExpenseFragment" />
     </fragment>
     <fragment
         android:id="@+id/addExpense"
@@ -63,4 +66,9 @@
         android:name="org.sheridancollege.expensetracker.AboutFragment"
         android:label="About"
         tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/modifyExpenseFragment"
+        android:name="org.sheridancollege.expensetracker.ui.expense.ModifyExpenseFragment"
+        android:label="modify_expense_fragment"
+        tools:layout="@layout/modify_expense_fragment" />
 </navigation>
