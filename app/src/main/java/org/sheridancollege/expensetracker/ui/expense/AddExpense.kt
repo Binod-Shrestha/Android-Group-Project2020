@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import org.sheridancollege.expensetracker.R
@@ -19,7 +18,9 @@ class AddExpense : Fragment() {
             savedInstanceState: Bundle?
     ): View? {
         binding = FragmentAddExpenseBinding.inflate(layoutInflater)
-
+        binding.btnAdd.setOnClickListener{ view: View ->
+            view.findNavController().navigate(R.id.action_addExpense_to_expenditureFragment)
+        }
 
         setHasOptionsMenu(true)
         return binding.root
